@@ -93,6 +93,11 @@
     padding: 8px 0 4px;
     font-family: var(--mono);
   }
+  #client-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
   .client-btn {
     background: transparent;
     border: 1px solid var(--border);
@@ -327,6 +332,84 @@
     border-radius: 6px;
     margin-bottom: 10px;
     font-size: 13px;
+  }
+
+  /* ── MEDIA QUERIES (RESPONSIVE) ───────────────────────── */
+  @media (max-width: 900px) {
+    .shell {
+      grid-template-columns: 240px 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .shell {
+      grid-template-columns: 1fr;
+      grid-template-rows: 56px auto 1fr;
+    }
+    .sidebar {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      padding: 15px;
+    }
+    #client-list {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 12px;
+      padding-bottom: 8px;
+    }
+    
+    #client-list::-webkit-scrollbar { height: 4px; }
+    #client-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+    
+    .client-btn {
+      min-width: 220px;
+      flex-shrink: 0;
+    }
+    .client-header {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 15px;
+    }
+    .analyze-btn {
+      width: 100%;
+      justify-content: center;
+    }
+    .semaforo {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .semaforo-resumen {
+      border-left: none;
+      border-top: 2px solid var(--border2);
+      padding-left: 0;
+      padding-top: 15px;
+      width: 100%;
+    }
+    .main {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .topbar {
+      padding: 0 15px;
+    }
+    .topbar-badge {
+      display: none;
+    }
+    .metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .main {
+      padding: 15px;
+    }
+    .semaforo-level {
+      font-size: 24px;
+    }
+    .client-name {
+      font-size: 18px;
+    }
   }
 </style>
 </head>
