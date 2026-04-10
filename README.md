@@ -1,4 +1,4 @@
-# 🚚 Customer Health Agent | Traxión
+# 🚚 Preven_IA | Traxión
 
 **Hackatón Bécalos Traxión Tech Challenge 2026 - Eje 2: Clientes en Riesgo**
 
@@ -44,7 +44,7 @@ Reemplazamos la gestión reactiva con diagnósticos proactivos, cruzando métric
 
 ## 📸 Vista Previa
 
-![Vista previa del Customer Health Agent](./src/imgs/preview-traxion.png)
+![Vista previa del Dashboard Preven_IA Agent](./src/imgs/preview-traxion.png)
 
 > *Dashboard principal mostrando el análisis en tiempo real de un perfil corporativo en riesgo.*
 > <br> by: Equipo ARC🚀
